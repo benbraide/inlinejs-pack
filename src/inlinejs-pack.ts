@@ -27,8 +27,6 @@ import {
     ScopeMagicHandlerCompact,
     ProxyMagicHandlerCompact,
     NativeMagicHandlerCompact,
-    WaitMagicHandlerCompact,
-    StreamMagicHandlerCompact,
     StaticMagicHandlerCompact,
     UnoptimizedMagicHandlerCompact,
     WatchMagicHandlerCompact,
@@ -53,8 +51,9 @@ import {
     MouseDirectiveHandlerCompact,
     KeyboardDirectiveHandlerCompact,
     FormatMagicHandlerCompact,
-    GetMagicHandlerCompact,
     FetchMagicHandlerCompact,
+    GetMagicHandlerCompact,
+    WaitMagicHandlerCompact,
     OverlayMagicHandlerCompact
 } from '@benbraide/inlinejs-extended/lib/esm';
 
@@ -104,8 +103,6 @@ RefsMagicHandlerCompact();
 ScopeMagicHandlerCompact();
 ProxyMagicHandlerCompact();
 NativeMagicHandlerCompact();
-WaitMagicHandlerCompact();
-StreamMagicHandlerCompact();
 
 StaticMagicHandlerCompact();
 UnoptimizedMagicHandlerCompact();
@@ -138,8 +135,9 @@ MouseDirectiveHandlerCompact();
 KeyboardDirectiveHandlerCompact();
 
 FormatMagicHandlerCompact();
-GetMagicHandlerCompact();
 FetchMagicHandlerCompact();
+GetMagicHandlerCompact();
+WaitMagicHandlerCompact();
 OverlayMagicHandlerCompact();
 
 //End: inlinejs-extended
