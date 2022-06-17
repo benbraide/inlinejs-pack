@@ -53,6 +53,7 @@ import {
     FormatMagicHandlerCompact,
     FetchMagicHandlerCompact,
     GetMagicHandlerCompact,
+    ResourceMagicHandlerCompact,
     WaitMagicHandlerCompact,
     OverlayMagicHandlerCompact
 } from '@benbraide/inlinejs-extended/lib/esm';
@@ -137,6 +138,7 @@ KeyboardDirectiveHandlerCompact();
 FormatMagicHandlerCompact();
 FetchMagicHandlerCompact();
 GetMagicHandlerCompact();
+ResourceMagicHandlerCompact();
 WaitMagicHandlerCompact();
 OverlayMagicHandlerCompact();
 
