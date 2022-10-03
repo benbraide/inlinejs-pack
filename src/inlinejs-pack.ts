@@ -1,6 +1,7 @@
 import { AutoBootstrap, GetGlobal, AttributeInterpolator, TextContentInterpolator } from '@benbraide/inlinejs';
 
 import {
+    CodeConcept,
     DataDirectiveHandlerCompact,
     ComponentDirectiveHandlerCompact,
     LocalsDirectiveHandlerCompact,
@@ -21,6 +22,7 @@ import {
     IfDirectiveHandlerCompact,
     ElseDirectiveHandlerCompact,
     EachDirectiveHandlerCompact,
+    CodeDirectiveHandlerCompact,
     ComponentMagicHandlerCompact,
     LocalsMagicHandlerCompact,
     RefsMagicHandlerCompact,
@@ -37,7 +39,8 @@ import {
     PickMagicHandlerCompact,
     ClassMagicHandlerCompact,
     EvaluateMagicHandlerCompact,
-    DomMagicHandlerCompact
+    DomMagicHandlerCompact,
+    CodeMagicHandlerCompact
 } from '@benbraide/inlinejs-core';
 
 import {
@@ -70,6 +73,8 @@ GetGlobal().AddTextContentProcessor(TextContentInterpolator);
 
 //Begin: inlinejs-core
 
+GetGlobal().SetConcept('code', new CodeConcept());
+
 DataDirectiveHandlerCompact();
 ComponentDirectiveHandlerCompact();
 LocalsDirectiveHandlerCompact();
@@ -98,6 +103,8 @@ IfDirectiveHandlerCompact();
 ElseDirectiveHandlerCompact();
 EachDirectiveHandlerCompact();
 
+CodeDirectiveHandlerCompact();
+
 ComponentMagicHandlerCompact();
 LocalsMagicHandlerCompact();
 RefsMagicHandlerCompact();
@@ -118,6 +125,8 @@ PickMagicHandlerCompact();
 ClassMagicHandlerCompact();
 EvaluateMagicHandlerCompact();
 DomMagicHandlerCompact();
+
+CodeMagicHandlerCompact();
 
 //End: inlinejs-core
 
