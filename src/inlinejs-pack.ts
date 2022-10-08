@@ -44,7 +44,12 @@ import {
 } from '@benbraide/inlinejs-core';
 
 import {
+    ResourceConceptName,
+    FetchConceptName,
+    ServerConceptName,
     ResourceConcept,
+    FetchConcept,
+    ServerConcept,
     AttrDirectiveHandlerCompact,
     IntersectionDirectiveHandlerCompact,
     TickDirectiveHandlerCompact,
@@ -55,6 +60,7 @@ import {
     KeyboardDirectiveHandlerCompact,
     FormatMagicHandlerCompact,
     FetchMagicHandlerCompact,
+    ServerMagicHandlerCompact,
     GetMagicHandlerCompact,
     ResourceMagicHandlerCompact,
     WaitMagicHandlerCompact,
@@ -133,7 +139,9 @@ CodeMagicHandlerCompact();
 
 //Begin: inlinejs-extended
 
-GetGlobal().SetConcept('resource', new ResourceConcept());
+GetGlobal().SetConcept(ResourceConceptName, new ResourceConcept());
+GetGlobal().SetConcept(FetchConceptName, new FetchConcept());
+GetGlobal().SetConcept(ServerConceptName, new ServerConcept());
     
 AttrDirectiveHandlerCompact();
 IntersectionDirectiveHandlerCompact();
@@ -146,6 +154,7 @@ KeyboardDirectiveHandlerCompact();
 
 FormatMagicHandlerCompact();
 FetchMagicHandlerCompact();
+ServerMagicHandlerCompact();
 GetMagicHandlerCompact();
 ResourceMagicHandlerCompact();
 WaitMagicHandlerCompact();
