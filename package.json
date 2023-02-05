@@ -1,6 +1,6 @@
 {
   "name": "@benbraide/inlinejs-pack",
-  "version": "1.0.22",
+  "version": "1.0.23",
   "description": "Run javascript code by embedding them in your HTML using the element as context.",
   "files": [
     "dist/",
@@ -11,7 +11,8 @@
     "prepublishOnly": "npm run compile",
     "build": "webpack -c ./webpack.config.js && webpack -c ./webpack2.config.js",
     "upload": "npm run build && npm publish --access=public",
-    "push": "npm i @benbraide/inlinejs @benbraide/inlinejs-core @benbraide/inlinejs-extended  && npm run upload"
+    "download": "npm i @benbraide/inlinejs @benbraide/inlinejs-core @benbraide/inlinejs-extended",
+    "push": "npm run download && npm run upload"
   },
   "repository": {
     "type": "git",
@@ -36,9 +37,9 @@
     "webpack": "^5.41.0"
   },
   "dependencies": {
-    "@benbraide/inlinejs": "^1.0.28",
-    "@benbraide/inlinejs-core": "^1.0.24",
-    "@benbraide/inlinejs-extended": "^1.0.21",
+    "@benbraide/inlinejs": "^1.0.30",
+    "@benbraide/inlinejs-core": "^1.0.26",
+    "@benbraide/inlinejs-extended": "^1.0.22",
     "webpack-cli": "^4.7.2"
   }
 }
